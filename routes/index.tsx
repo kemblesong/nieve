@@ -56,71 +56,71 @@ export default define.page(function Home() {
           }
 
           .floating-nieve:nth-child(2) {
-            top: 10%;
-            left: 5%;
+            top: 15%;
+            left: 8%;
             animation: float1 10s ease-in-out infinite;
             animation-delay: 0s;
           }
 
           .floating-nieve:nth-child(3) {
-            top: 35%;
-            left: 8%;
+            top: 5%;
+            left: 15%;
             animation: float2Reverse 9s ease-in-out infinite;
             animation-delay: 1s;
           }
 
           .floating-nieve:nth-child(4) {
-            top: 75%;
-            right: 5%;
+            top: 20%;
+            right: 10%;
             animation: float2Reverse 10s ease-in-out infinite;
             animation-delay: 1s;
           }
 
           .floating-nieve:nth-child(5) {
-            top: 45%;
-            right: 10%;
+            top: 8%;
+            right: 25%;
             animation: float3 9s ease-in-out infinite;
             animation-delay: 2s;
           }
 
           .floating-nieve:nth-child(6) {
-            top: 60%;
-            left: 12%;
+            top: 45%;
+            left: 5%;
             animation: float1Reverse 8s ease-in-out infinite;
             animation-delay: 3s;
           }
 
           .floating-nieve:nth-child(7) {
-            top: 8%;
-            right: 5%;
+            top: 50%;
+            right: 8%;
             animation: float2 9s ease-in-out infinite;
             animation-delay: 0.5s;
           }
 
           .floating-nieve:nth-child(8) {
-            top: 85%;
+            top: 65%;
             left: 12%;
             animation: float3Reverse 7s ease-in-out infinite;
             animation-delay: 1.5s;
           }
 
           .floating-nieve:nth-child(9) {
-            top: 25%;
-            left: 3%;
+            top: 70%;
+            right: 15%;
             animation: float1 8s ease-in-out infinite;
             animation-delay: 2.5s;
           }
 
           .floating-nieve:nth-child(10) {
-            top: 50%;
-            right: 3%;
+            top: 90%;
+            right: 5%;
             animation: float2Reverse 8s ease-in-out infinite;
             animation-delay: 4s;
           }
 
           .floating-nieve:nth-child(11) {
-            top: 40%;
-            left: 2%;
+            top: 85%;
+            left: 12%;
             animation: float3 7s ease-in-out infinite;
             animation-delay: 0.8s;
           }
@@ -129,31 +129,67 @@ export default define.page(function Home() {
 
       {/* Floating Nieve elements */}
       <div className="floating-nieve">
-        <img src="/nieve1.png" alt="Nieve" className="w-36 h-36 rounded-full border-4 border-amber-600 object-cover" />
+        <img
+          src="/nieve1.png"
+          alt="Nieve"
+          className="w-36 h-36 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve2.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover" />
+        <img
+          src="/nieve2.png"
+          alt="Nieve"
+          className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve3.png" alt="Nieve" className="w-48 h-48 rounded-full border-4 border-amber-600 object-cover" />
+        <img
+          src="/nieve3.png"
+          alt="Nieve"
+          className="w-48 h-48 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve4.png" alt="Nieve" className="w-36 h-36 rounded-full border-4 border-amber-600 object-cover" />
+        <img
+          src="/nieve4.png"
+          alt="Nieve"
+          className="w-36 h-36 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve5.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover" />
+        <img
+          src="/nieve5.png"
+          alt="Nieve"
+          className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve6.png" alt="Nieve" className="w-48 h-48 rounded-full border-4 border-amber-600 object-cover" />
+        <img
+          src="/nieve6.png"
+          alt="Nieve"
+          className="w-48 h-48 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve7.png" alt="Nieve" className="w-44 h-44 rounded-full border-4 border-amber-600 object-cover" />
+        <img
+          src="/nieve7.png"
+          alt="Nieve"
+          className="w-44 h-44 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve8.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover" />
+        <img
+          src="/nieve8.png"
+          alt="Nieve"
+          className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve9.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover" />
+        <img
+          src="/nieve9.png"
+          alt="Nieve"
+          className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
       <div className="floating-nieve">
         <img
