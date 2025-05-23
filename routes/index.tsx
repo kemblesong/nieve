@@ -90,7 +90,10 @@ export default define.page(function Home() {
                       >
                         STREAM STARTING SOON...
                       </p>
-                      <p class="text-gray-400 mt-2">
+                      <p
+                        class="text-gray-400 mt-2"
+                        style={{ fontFamily: "'Comic Neue', cursive" }}
+                      >
                         Nieve's getting ready for the show!
                       </p>
                     </div>
@@ -232,9 +235,14 @@ export default define.page(function Home() {
               class="text-yellow-300 font-bold text-lg"
               style={{ fontFamily: "'Fredoka One', cursive" }}
             >
-              © 2023 nieve.dog - Straight from Arnold's neighborhood!
+              © 2025 nieve.dog
             </p>
-            <p class="text-orange-300 mt-2">Football head approved! 🏈</p>
+            <p
+              class="text-orange-300 mt-2"
+              style={{ fontFamily: "'Comic Neue', cursive" }}
+            >
+              Made with ❤️ for the goodest boy
+            </p>
           </div>
         </footer>
       </div>
