@@ -7,106 +7,147 @@ export default define.page(function Home() {
       <style>
         {`
           @keyframes float1 {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            25% { transform: translateY(-20px) rotate(5deg); }
-            50% { transform: translateY(-40px) rotate(0deg); }
-            75% { transform: translateY(-20px) rotate(-5deg); }
+            0% { transform: translateX(0px) translateY(0px) rotate(0deg); }
+            12.5% { transform: translateX(7.5px) translateY(-20px) rotate(5deg); }
+            25% { transform: translateX(15px) translateY(-40px) rotate(0deg); }
+            37.5% { transform: translateX(22.5px) translateY(-20px) rotate(-5deg); }
+            50% { transform: translateX(30px) translateY(0px) rotate(0deg); }
+            62.5% { transform: translateX(22.5px) translateY(-20px) rotate(5deg); }
+            75% { transform: translateX(15px) translateY(-40px) rotate(0deg); }
+            87.5% { transform: translateX(7.5px) translateY(-20px) rotate(-5deg); }
+            100% { transform: translateX(0px) translateY(0px) rotate(0deg); }
           }
           
           @keyframes float2 {
-            0%, 100% { transform: translateY(-10px) rotate(-2deg); }
-            25% { transform: translateY(-30px) rotate(3deg); }
-            50% { transform: translateY(-50px) rotate(-2deg); }
-            75% { transform: translateY(-30px) rotate(-7deg); }
+            0% { transform: translateX(0px) translateY(-10px) rotate(-2deg); }
+            12.5% { transform: translateX(7.5px) translateY(-30px) rotate(3deg); }
+            25% { transform: translateX(15px) translateY(-50px) rotate(-2deg); }
+            37.5% { transform: translateX(22.5px) translateY(-30px) rotate(-7deg); }
+            50% { transform: translateX(30px) translateY(-10px) rotate(-2deg); }
+            62.5% { transform: translateX(22.5px) translateY(-30px) rotate(3deg); }
+            75% { transform: translateX(15px) translateY(-50px) rotate(-2deg); }
+            87.5% { transform: translateX(7.5px) translateY(-30px) rotate(-7deg); }
+            100% { transform: translateX(0px) translateY(-10px) rotate(-2deg); }
           }
           
           @keyframes float3 {
-            0%, 100% { transform: translateY(-5px) rotate(3deg); }
-            33% { transform: translateY(-35px) rotate(-3deg); }
-            66% { transform: translateY(-25px) rotate(5deg); }
+            0% { transform: translateX(0px) translateY(-5px) rotate(3deg); }
+            16.5% { transform: translateX(10px) translateY(-35px) rotate(-3deg); }
+            33% { transform: translateX(20px) translateY(-25px) rotate(5deg); }
+            50% { transform: translateX(30px) translateY(-5px) rotate(3deg); }
+            66% { transform: translateX(20px) translateY(-35px) rotate(-3deg); }
+            83% { transform: translateX(10px) translateY(-25px) rotate(5deg); }
+            100% { transform: translateX(0px) translateY(-5px) rotate(3deg); }
           }
           
-          @keyframes drift {
-            0% { transform: translateX(0px); }
-            50% { transform: translateX(30px); }
-            100% { transform: translateX(0px); }
+          @keyframes float1Reverse {
+            0% { transform: translateX(0px) translateY(0px) rotate(0deg); }
+            12.5% { transform: translateX(-7.5px) translateY(-20px) rotate(5deg); }
+            25% { transform: translateX(-15px) translateY(-40px) rotate(0deg); }
+            37.5% { transform: translateX(-22.5px) translateY(-20px) rotate(-5deg); }
+            50% { transform: translateX(-30px) translateY(0px) rotate(0deg); }
+            62.5% { transform: translateX(-22.5px) translateY(-20px) rotate(5deg); }
+            75% { transform: translateX(-15px) translateY(-40px) rotate(0deg); }
+            87.5% { transform: translateX(-7.5px) translateY(-20px) rotate(-5deg); }
+            100% { transform: translateX(0px) translateY(0px) rotate(0deg); }
+          }
+          
+          @keyframes float2Reverse {
+            0% { transform: translateX(0px) translateY(-10px) rotate(-2deg); }
+            12.5% { transform: translateX(-7.5px) translateY(-30px) rotate(3deg); }
+            25% { transform: translateX(-15px) translateY(-50px) rotate(-2deg); }
+            37.5% { transform: translateX(-22.5px) translateY(-30px) rotate(-7deg); }
+            50% { transform: translateX(-30px) translateY(-10px) rotate(-2deg); }
+            62.5% { transform: translateX(-22.5px) translateY(-30px) rotate(3deg); }
+            75% { transform: translateX(-15px) translateY(-50px) rotate(-2deg); }
+            87.5% { transform: translateX(-7.5px) translateY(-30px) rotate(-7deg); }
+            100% { transform: translateX(0px) translateY(-10px) rotate(-2deg); }
+          }
+          
+          @keyframes float3Reverse {
+            0% { transform: translateX(0px) translateY(-5px) rotate(3deg); }
+            16.5% { transform: translateX(-10px) translateY(-35px) rotate(-3deg); }
+            33% { transform: translateX(-20px) translateY(-25px) rotate(5deg); }
+            50% { transform: translateX(-30px) translateY(-5px) rotate(3deg); }
+            66% { transform: translateX(-20px) translateY(-35px) rotate(-3deg); }
+            83% { transform: translateX(-10px) translateY(-25px) rotate(5deg); }
+            100% { transform: translateX(0px) translateY(-5px) rotate(3deg); }
           }
           
           .floating-nieve {
             position: fixed;
             pointer-events: none;
             z-index: 0;
-            opacity: 0.5;
-            filter: blur(0.5px);
-          }
-          
-          .floating-nieve:nth-child(1) {
-            top: 20%;
-            left: 10%;
-            animation: float1 4s ease-in-out infinite, drift 8s ease-in-out infinite;
-            animation-delay: 0s;
+            opacity: 1.0;
           }
           
           .floating-nieve:nth-child(2) {
-            top: 15%;
+            top: 10%;
             left: 5%;
-            animation: float1 4s ease-in-out infinite, drift 8s ease-in-out infinite;
+            animation: float1 8s ease-in-out infinite;
             animation-delay: 0s;
           }
           
           .floating-nieve:nth-child(3) {
-            top: 75%;
-            right: 8%;
-            animation: float2 5s ease-in-out infinite, drift 10s ease-in-out infinite reverse;
+            top: 35%;
+            left: 8%;
+            animation: float2Reverse 10s ease-in-out infinite;
             animation-delay: 1s;
           }
           
           .floating-nieve:nth-child(4) {
-            top: 45%;
-            left: 85%;
-            animation: float3 6s ease-in-out infinite, drift 12s ease-in-out infinite;
-            animation-delay: 2s;
+            top: 75%;
+            right: 5%;
+            animation: float2Reverse 10s ease-in-out infinite;
+            animation-delay: 1s;
           }
           
           .floating-nieve:nth-child(5) {
-            top: 85%;
-            left: 15%;
-            animation: float1 7s ease-in-out infinite, drift 9s ease-in-out infinite reverse;
-            animation-delay: 3s;
+            top: 45%;
+            right: 10%;
+            animation: float3 12s ease-in-out infinite;
+            animation-delay: 2s;
           }
           
           .floating-nieve:nth-child(6) {
-            top: 8%;
-            right: 25%;
-            animation: float2 4.5s ease-in-out infinite, drift 11s ease-in-out infinite;
-            animation-delay: 0.5s;
+            top: 60%;
+            left: 12%;
+            animation: float1Reverse 9s ease-in-out infinite;
+            animation-delay: 3s;
           }
           
           .floating-nieve:nth-child(7) {
-            top: 30%;
-            left: 2%;
-            animation: float3 5.5s ease-in-out infinite, drift 7s ease-in-out infinite reverse;
-            animation-delay: 1.5s;
+            top: 8%;
+            right: 20%;
+            animation: float2 11s ease-in-out infinite;
+            animation-delay: 0.5s;
           }
           
           .floating-nieve:nth-child(8) {
-            top: 78%;
-            right: 60%;
-            animation: float1 6.5s ease-in-out infinite, drift 13s ease-in-out infinite;
-            animation-delay: 2.5s;
+            top: 85%;
+            left: 18%;
+            animation: float3Reverse 7s ease-in-out infinite;
+            animation-delay: 1.5s;
           }
           
           .floating-nieve:nth-child(9) {
-            top: 12%;
-            left: 75%;
-            animation: float2 3.5s ease-in-out infinite, drift 9.5s ease-in-out infinite reverse;
-            animation-delay: 4s;
+            top: 25%;
+            left: 3%;
+            animation: float1 13s ease-in-out infinite;
+            animation-delay: 2.5s;
           }
           
           .floating-nieve:nth-child(10) {
-            top: 88%;
-            right: 12%;
-            animation: float3 4.8s ease-in-out infinite, drift 10.5s ease-in-out infinite;
+            top: 50%;
+            right: 3%;
+            animation: float2Reverse 9.5s ease-in-out infinite;
+            animation-delay: 4s;
+          }
+          
+          .floating-nieve:nth-child(11) {
+            top: 40%;
+            left: 2%;
+            animation: float3 10.5s ease-in-out infinite;
             animation-delay: 0.8s;
           }
         `}
@@ -114,49 +155,34 @@ export default define.page(function Home() {
 
       {/* Floating Nieve elements */}
       <div className="floating-nieve">
-        <div className="w-16 h-16 bg-amber-400 rounded-full border-4 border-amber-600 shadow-lg flex items-center justify-center text-2xl">
-          🐕
-        </div>
+        <img src="/nieve1.png" alt="Nieve" className="w-24 h-24 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
       </div>
       <div className="floating-nieve">
-        <div className="w-12 h-12 bg-amber-400 rounded-full border-3 border-amber-600 shadow-lg flex items-center justify-center text-lg">
-          🐕
-        </div>
+        <img src="/nieve2.png" alt="Nieve" className="w-20 h-20 rounded-full border-2 border-amber-600 shadow-lg object-cover" />
       </div>
       <div className="floating-nieve">
-        <div className="w-20 h-20 bg-amber-400 rounded-full border-4 border-amber-600 shadow-lg flex items-center justify-center text-3xl">
-          🐕
-        </div>
+        <img src="/nieve3.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
       </div>
       <div className="floating-nieve">
-        <div className="w-14 h-14 bg-amber-400 rounded-full border-3 border-amber-600 shadow-lg flex items-center justify-center text-xl">
-          🐕
-        </div>
+        <img src="/nieve4.png" alt="Nieve" className="w-24 h-24 rounded-full border-2 border-amber-600 shadow-lg object-cover" />
       </div>
       <div className="floating-nieve">
-        <div className="w-18 h-18 bg-amber-400 rounded-full border-4 border-amber-600 shadow-lg flex items-center justify-center text-2xl">
-          🐕
-        </div>
+        <img src="/nieve5.png" alt="Nieve" className="w-20 h-20 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
       </div>
       <div className="floating-nieve">
-        <div className="w-10 h-10 bg-amber-400 rounded-full border-2 border-amber-600 shadow-lg flex items-center justify-center text-sm">
-          🐕
-        </div>
+        <img src="/nieve6.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
       </div>
       <div className="floating-nieve">
-        <div className="w-24 h-24 bg-amber-400 rounded-full border-4 border-amber-600 shadow-lg flex items-center justify-center text-4xl">
-          🐕
-        </div>
+        <img src="/nieve7.png" alt="Nieve" className="w-28 h-28 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
       </div>
       <div className="floating-nieve">
-        <div className="w-8 h-8 bg-amber-400 rounded-full border-2 border-amber-600 shadow-lg flex items-center justify-center text-xs">
-          🐕
-        </div>
+        <img src="/nieve8.png" alt="Nieve" className="w-20 h-20 rounded-full border-2 border-amber-600 shadow-lg object-cover" />
       </div>
       <div className="floating-nieve">
-        <div className="w-16 h-16 bg-amber-400 rounded-full border-3 border-amber-600 shadow-lg flex items-center justify-center text-xl">
-          🐕
-        </div>
+        <img src="/nieve9.png" alt="Nieve" className="w-20 h-20 rounded-full border-2 border-amber-600 shadow-lg object-cover" />
+      </div>
+      <div className="floating-nieve">
+        <img src="/nieve10.png" alt="Nieve" className="w-24 h-24 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
       </div>
 
       <div
