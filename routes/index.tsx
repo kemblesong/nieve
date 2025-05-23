@@ -8,146 +8,120 @@ export default define.page(function Home() {
         {`
           @keyframes float1 {
             0% { transform: translateX(0px) translateY(0px) rotate(0deg); }
-            12.5% { transform: translateX(7.5px) translateY(-20px) rotate(5deg); }
-            25% { transform: translateX(15px) translateY(-40px) rotate(0deg); }
-            37.5% { transform: translateX(22.5px) translateY(-20px) rotate(-5deg); }
-            50% { transform: translateX(30px) translateY(0px) rotate(0deg); }
-            62.5% { transform: translateX(22.5px) translateY(-20px) rotate(5deg); }
-            75% { transform: translateX(15px) translateY(-40px) rotate(0deg); }
-            87.5% { transform: translateX(7.5px) translateY(-20px) rotate(-5deg); }
+            25% { transform: translateX(50px) translateY(-30px) rotate(8deg); }
+            50% { transform: translateX(80px) translateY(-50px) rotate(-5deg); }
+            75% { transform: translateX(40px) translateY(-25px) rotate(6deg); }
             100% { transform: translateX(0px) translateY(0px) rotate(0deg); }
           }
-          
+
           @keyframes float2 {
-            0% { transform: translateX(0px) translateY(-10px) rotate(-2deg); }
-            12.5% { transform: translateX(7.5px) translateY(-30px) rotate(3deg); }
-            25% { transform: translateX(15px) translateY(-50px) rotate(-2deg); }
-            37.5% { transform: translateX(22.5px) translateY(-30px) rotate(-7deg); }
-            50% { transform: translateX(30px) translateY(-10px) rotate(-2deg); }
-            62.5% { transform: translateX(22.5px) translateY(-30px) rotate(3deg); }
-            75% { transform: translateX(15px) translateY(-50px) rotate(-2deg); }
-            87.5% { transform: translateX(7.5px) translateY(-30px) rotate(-7deg); }
-            100% { transform: translateX(0px) translateY(-10px) rotate(-2deg); }
+            0% { transform: translateX(0px) translateY(0px) rotate(-3deg); }
+            33% { transform: translateX(60px) translateY(-40px) rotate(10deg); }
+            66% { transform: translateX(90px) translateY(-60px) rotate(-8deg); }
+            100% { transform: translateX(0px) translateY(0px) rotate(-3deg); }
           }
-          
+
           @keyframes float3 {
-            0% { transform: translateX(0px) translateY(-5px) rotate(3deg); }
-            16.5% { transform: translateX(10px) translateY(-35px) rotate(-3deg); }
-            33% { transform: translateX(20px) translateY(-25px) rotate(5deg); }
-            50% { transform: translateX(30px) translateY(-5px) rotate(3deg); }
-            66% { transform: translateX(20px) translateY(-35px) rotate(-3deg); }
-            83% { transform: translateX(10px) translateY(-25px) rotate(5deg); }
-            100% { transform: translateX(0px) translateY(-5px) rotate(3deg); }
+            0% { transform: translateX(0px) translateY(0px) rotate(5deg); }
+            50% { transform: translateX(100px) translateY(-70px) rotate(-12deg); }
+            100% { transform: translateX(0px) translateY(0px) rotate(5deg); }
           }
-          
+
           @keyframes float1Reverse {
             0% { transform: translateX(0px) translateY(0px) rotate(0deg); }
-            12.5% { transform: translateX(-7.5px) translateY(-20px) rotate(5deg); }
-            25% { transform: translateX(-15px) translateY(-40px) rotate(0deg); }
-            37.5% { transform: translateX(-22.5px) translateY(-20px) rotate(-5deg); }
-            50% { transform: translateX(-30px) translateY(0px) rotate(0deg); }
-            62.5% { transform: translateX(-22.5px) translateY(-20px) rotate(5deg); }
-            75% { transform: translateX(-15px) translateY(-40px) rotate(0deg); }
-            87.5% { transform: translateX(-7.5px) translateY(-20px) rotate(-5deg); }
+            25% { transform: translateX(-50px) translateY(-30px) rotate(-8deg); }
+            50% { transform: translateX(-80px) translateY(-50px) rotate(5deg); }
+            75% { transform: translateX(-40px) translateY(-25px) rotate(-6deg); }
             100% { transform: translateX(0px) translateY(0px) rotate(0deg); }
           }
-          
+
           @keyframes float2Reverse {
-            0% { transform: translateX(0px) translateY(-10px) rotate(-2deg); }
-            12.5% { transform: translateX(-7.5px) translateY(-30px) rotate(3deg); }
-            25% { transform: translateX(-15px) translateY(-50px) rotate(-2deg); }
-            37.5% { transform: translateX(-22.5px) translateY(-30px) rotate(-7deg); }
-            50% { transform: translateX(-30px) translateY(-10px) rotate(-2deg); }
-            62.5% { transform: translateX(-22.5px) translateY(-30px) rotate(3deg); }
-            75% { transform: translateX(-15px) translateY(-50px) rotate(-2deg); }
-            87.5% { transform: translateX(-7.5px) translateY(-30px) rotate(-7deg); }
-            100% { transform: translateX(0px) translateY(-10px) rotate(-2deg); }
+            0% { transform: translateX(0px) translateY(0px) rotate(3deg); }
+            33% { transform: translateX(-60px) translateY(-40px) rotate(-10deg); }
+            66% { transform: translateX(-90px) translateY(-60px) rotate(8deg); }
+            100% { transform: translateX(0px) translateY(0px) rotate(3deg); }
           }
-          
+
           @keyframes float3Reverse {
-            0% { transform: translateX(0px) translateY(-5px) rotate(3deg); }
-            16.5% { transform: translateX(-10px) translateY(-35px) rotate(-3deg); }
-            33% { transform: translateX(-20px) translateY(-25px) rotate(5deg); }
-            50% { transform: translateX(-30px) translateY(-5px) rotate(3deg); }
-            66% { transform: translateX(-20px) translateY(-35px) rotate(-3deg); }
-            83% { transform: translateX(-10px) translateY(-25px) rotate(5deg); }
-            100% { transform: translateX(0px) translateY(-5px) rotate(3deg); }
+            0% { transform: translateX(0px) translateY(0px) rotate(-5deg); }
+            50% { transform: translateX(-100px) translateY(-70px) rotate(12deg); }
+            100% { transform: translateX(0px) translateY(0px) rotate(-5deg); }
           }
-          
+
           .floating-nieve {
             position: fixed;
             pointer-events: none;
             z-index: 0;
-            opacity: 1.0;
+            opacity: 0.8;
           }
-          
+
           .floating-nieve:nth-child(2) {
             top: 10%;
             left: 5%;
-            animation: float1 8s ease-in-out infinite;
+            animation: float1 10s ease-in-out infinite;
             animation-delay: 0s;
           }
-          
+
           .floating-nieve:nth-child(3) {
             top: 35%;
             left: 8%;
-            animation: float2Reverse 10s ease-in-out infinite;
+            animation: float2Reverse 9s ease-in-out infinite;
             animation-delay: 1s;
           }
-          
+
           .floating-nieve:nth-child(4) {
             top: 75%;
             right: 5%;
             animation: float2Reverse 10s ease-in-out infinite;
             animation-delay: 1s;
           }
-          
+
           .floating-nieve:nth-child(5) {
             top: 45%;
             right: 10%;
-            animation: float3 12s ease-in-out infinite;
+            animation: float3 9s ease-in-out infinite;
             animation-delay: 2s;
           }
-          
+
           .floating-nieve:nth-child(6) {
             top: 60%;
             left: 12%;
-            animation: float1Reverse 9s ease-in-out infinite;
+            animation: float1Reverse 8s ease-in-out infinite;
             animation-delay: 3s;
           }
-          
+
           .floating-nieve:nth-child(7) {
             top: 8%;
-            right: 20%;
-            animation: float2 11s ease-in-out infinite;
+            right: 5%;
+            animation: float2 9s ease-in-out infinite;
             animation-delay: 0.5s;
           }
-          
+
           .floating-nieve:nth-child(8) {
             top: 85%;
-            left: 18%;
+            left: 12%;
             animation: float3Reverse 7s ease-in-out infinite;
             animation-delay: 1.5s;
           }
-          
+
           .floating-nieve:nth-child(9) {
             top: 25%;
             left: 3%;
-            animation: float1 13s ease-in-out infinite;
+            animation: float1 8s ease-in-out infinite;
             animation-delay: 2.5s;
           }
-          
+
           .floating-nieve:nth-child(10) {
             top: 50%;
             right: 3%;
-            animation: float2Reverse 9.5s ease-in-out infinite;
+            animation: float2Reverse 8s ease-in-out infinite;
             animation-delay: 4s;
           }
-          
+
           .floating-nieve:nth-child(11) {
             top: 40%;
             left: 2%;
-            animation: float3 10.5s ease-in-out infinite;
+            animation: float3 7s ease-in-out infinite;
             animation-delay: 0.8s;
           }
         `}
@@ -155,34 +129,38 @@ export default define.page(function Home() {
 
       {/* Floating Nieve elements */}
       <div className="floating-nieve">
-        <img src="/nieve1.png" alt="Nieve" className="w-24 h-24 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
+        <img src="/nieve1.png" alt="Nieve" className="w-36 h-36 rounded-full border-4 border-amber-600 object-cover" />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve2.png" alt="Nieve" className="w-20 h-20 rounded-full border-2 border-amber-600 shadow-lg object-cover" />
+        <img src="/nieve2.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover" />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve3.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
+        <img src="/nieve3.png" alt="Nieve" className="w-48 h-48 rounded-full border-4 border-amber-600 object-cover" />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve4.png" alt="Nieve" className="w-24 h-24 rounded-full border-2 border-amber-600 shadow-lg object-cover" />
+        <img src="/nieve4.png" alt="Nieve" className="w-36 h-36 rounded-full border-4 border-amber-600 object-cover" />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve5.png" alt="Nieve" className="w-20 h-20 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
+        <img src="/nieve5.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover" />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve6.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
+        <img src="/nieve6.png" alt="Nieve" className="w-48 h-48 rounded-full border-4 border-amber-600 object-cover" />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve7.png" alt="Nieve" className="w-28 h-28 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
+        <img src="/nieve7.png" alt="Nieve" className="w-44 h-44 rounded-full border-4 border-amber-600 object-cover" />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve8.png" alt="Nieve" className="w-20 h-20 rounded-full border-2 border-amber-600 shadow-lg object-cover" />
+        <img src="/nieve8.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover" />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve9.png" alt="Nieve" className="w-20 h-20 rounded-full border-2 border-amber-600 shadow-lg object-cover" />
+        <img src="/nieve9.png" alt="Nieve" className="w-32 h-32 rounded-full border-4 border-amber-600 object-cover" />
       </div>
       <div className="floating-nieve">
-        <img src="/nieve10.png" alt="Nieve" className="w-24 h-24 rounded-full border-4 border-amber-600 shadow-lg object-cover" />
+        <img
+          src="/nieve10.png"
+          alt="Nieve"
+          className="w-36 h-36 rounded-full border-4 border-amber-600 object-cover"
+        />
       </div>
 
       <div
