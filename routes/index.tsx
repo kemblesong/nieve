@@ -391,12 +391,12 @@ export default define.page(function Home() {
                     href="#"
                     class="bg-cyan-400 hover:bg-cyan-300 p-6 rounded-xl border-4 border-black shadow-lg transform hover:scale-105 transition-all text-center"
                   >
-                    <div class="text-4xl mb-2">🐦</div>
+                    <div class="text-4xl mb-2">🛍️</div>
                     <span
                       class="text-black font-bold"
                       style={{ fontFamily: "'Fredoka One', cursive" }}
                     >
-                      TWITTER
+                      MERCH
                     </span>
                   </a>
                   <a
