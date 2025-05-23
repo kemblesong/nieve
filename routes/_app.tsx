@@ -15,11 +15,11 @@ export default function App({ Component }: PageProps) {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body class="bg-blue-50">
+      <body>
         <Component />
       </body>
     </html>

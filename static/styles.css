@@ -1,6 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary: #e67e22;
+  --secondary: #2ecc71;
+  --accent: #8e44ad;
+  --background: #fff9f0;
+  --text: #34495e;
+}
+
+body {
+  background-color: var(--background);
+  background-image:
+    linear-gradient(rgba(230, 126, 34, 0.03) 1px, transparent 1px),
+    linear-gradient(to right, rgba(230, 126, 34, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.card {
+  @apply bg-white border border-gray-100;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 font-medium
+    transition-colors duration-200 border-0 rounded-md;
+}
+
+.btn-primary {
+  @apply bg-orange-500 hover:bg-orange-600 text-white;
+}
+
+.btn-secondary {
+  @apply bg-green-500 hover:bg-green-600 text-white;
+}
+
 .fresh-gradient {
   background-color: rgb(134, 239, 172);
   background-image: linear-gradient(
