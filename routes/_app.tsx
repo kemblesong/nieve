@@ -6,7 +6,11 @@ export default function App({ Component }: PageProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>nieve.dog</title>
+        <meta
+          name="description"
+          content="Meet Nieve, the maltese-westie king of the streets. Tune in to see our Brooklyn boy Nieve live streaming his adventures."
+        />
+        <title>Nieve Cam | nieve.dog</title>
         <link rel="stylesheet" href="/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
