@@ -440,7 +440,7 @@ export default define.page(function Home() {
                 class="text-orange-300 mt-2"
                 style={{ fontFamily: "'Comic Neue', cursive" }}
               >
-                Made with ❤️ for the goodest boy
+                Made with ❤️ for the goodest boy in Brooklyn.
               </p>
             </div>
           </footer>
