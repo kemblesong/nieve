@@ -71,7 +71,7 @@ export default define.page(function Home() {
 
           .floating-nieve:nth-child(4) {
             top: 20%;
-            right: 10%;
+            right: 2%;
             animation: float2Reverse 10s ease-in-out infinite;
             animation-delay: 1s;
           }
