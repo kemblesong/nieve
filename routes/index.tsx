@@ -276,6 +276,25 @@ export default define.page(function Home() {
                       NIEVE CAM v2.0
                     </span>
                   </div>
+
+                  <div className="relative pt-[56.25%]">
+                    <iframe
+                      src="https://customer-8n8pb3oentrv3ymv.cloudflarestream.com/06a2a61c0cca889b3aca0e0ed9e114eb/iframe"
+                      style={{
+                        border: "none",
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        height: "100%",
+                        width: "100%",
+                      }}
+                      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                      allowFullScreen={true}
+                    >
+                    </iframe>
+                  </div>
+                  {
+                    /*
                   <div class="relative pb-[56.25%] h-0 overflow-hidden bg-black rounded border-2 border-gray-600">
                     <div class="absolute inset-0 flex items-center justify-center">
                       <div class="text-center">
@@ -295,6 +314,8 @@ export default define.page(function Home() {
                       </div>
                     </div>
                   </div>
+                  */
+                  }
                 </div>
               </div>
             </div>
