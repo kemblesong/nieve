@@ -279,17 +279,17 @@ export default define.page(function Home() {
 
                   <div className="relative pt-[56.25%]">
                     <iframe
-                      src="https://customer-8n8pb3oentrv3ymv.cloudflarestream.com/06a2a61c0cca889b3aca0e0ed9e114eb/iframe"
+                      src="https://player.twitch.tv/?channel=nievethedog&parent=nieve.dog"
+                      height="100%"
+                      width="100%"
+                      allowFullScreen={true}
                       style={{
                         border: "none",
                         position: "absolute",
                         top: 0,
                         left: 0,
                         height: "100%",
-                        width: "100%",
                       }}
-                      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-                      allowFullScreen={true}
                     >
                     </iframe>
                   </div>
